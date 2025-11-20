@@ -1,0 +1,36 @@
+.introducao {
+  max-width: 1200px;
+  padding: 20px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+}
+.introducao h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.introducao p {
+  color: #525252;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 500px) {
+  .introducao {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .introducao img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .introducao p {
+    font-size: 1rem;
+  }
+  .introducao h1 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+}

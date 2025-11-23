@@ -1,0 +1,106 @@
+.services {
+  max-width: 1200px;
+  padding: 20px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.empresa-texto {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: rgb(88, 88, 88);
+  margin-bottom: 20px;
+}
+.empresa {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  background-color: aliceblue;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  position: relative;
+  gap: 10px 20px;
+}
+
+.empresa::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 4px;
+  background-color: red;
+  top: 10px;
+  left: -50px;
+}
+
+.empresa-ano {
+  position: absolute;
+  top: 4px;
+  left: -90px;
+  color: #525252;
+}
+.empresa-titulo {
+  font-size: 1.2rem;
+  line-height: 1.1;
+  font-weight: bold;
+}
+.empresa-descricao {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+}
+.empresa-descricao li {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  border-radius: 4px;
+  background-color: #e0e0e0;
+  padding: 5px 10px;
+}
+
+.empresa-sobre {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #616161;
+}
+@media (max-width: 750px) {
+  .services {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .empresa-ano {
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    color: #000000;
+  }
+
+  .empresa::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 20px;
+    background-color: rgb(250, 74, 74);
+    top: 3px;
+    left: 10px;
+  }
+  .empresa-titulo {
+    font-size: 1.2rem;
+    line-height: 1.1;
+    font-weight: bold;
+
+    top: 10px;
+    left: 100px;
+  }
+  .empresa {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    background-color: aliceblue;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    gap: 10px 20px;
+  }
+}

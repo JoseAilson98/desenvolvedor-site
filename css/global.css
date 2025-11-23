@@ -25,3 +25,9 @@ img {
   width: 150px;
   padding: 10px;
 }
+.subtitulo {
+  font-size: 4rem;
+  line-height: 1;
+  text-transform: uppercase;
+  align-content: center;
+}
